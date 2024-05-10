@@ -1,6 +1,6 @@
 # teste1
 name: desafio_bike_brends
-run-name: ${{ github.actor }} Pipeline deploy :)
+run-name: ${{ github.actor }} Pipeline deploy :/
 on:
   push:
     branches:
