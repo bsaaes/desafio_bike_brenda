@@ -1,5 +1,5 @@
 # teste1
-name: bike_automacao
+name: desafio_bike_brends
 run-name: ${{ github.actor }} Pipeline deploy :)
 on:
   push:
@@ -33,6 +33,6 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ssh_key.pem
 
           chmod 600 ssh_key.pem
-          scp -i ssh_key.pem images/* ec2-user@35.153.179.210:/home/ec2-user/efs
+          scp -i ssh_key.pem images/* ec2-user@34.233.71.92:/home/ec2-user/fotos
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
